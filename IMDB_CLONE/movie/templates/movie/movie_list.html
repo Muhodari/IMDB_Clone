@@ -26,101 +26,78 @@
 		
 
 		<div id="site-content">
-			<header class="site-header">
-				<div class="container">
-					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" class="logo">
-						<div class="logo-copy">
-							<h1 class="site-title">Company Name</h1>
-							<small class="site-description">Tagline goes here</small>
-						</div>
-					</a> <!-- #branding -->
+<!--			<header class="site-header">-->
+<!--				<div class="container">-->
+<!--					<a href="index.html" id="branding">-->
+<!--						<img src="images/logo.png" alt="" class="logo">-->
+<!--						<div class="logo-copy">-->
+<!--							<h1 class="site-title">Company Name</h1>-->
+<!--							<small class="site-description">Tagline goes here</small>-->
+<!--						</div>-->
+<!--					</a> &lt;!&ndash; #branding &ndash;&gt;-->
 
-					<div class="main-navigation">
-						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-						<ul class="menu">
-							<li class="menu-item"><a href="index.html">Home</a></li>
-							<li class="menu-item"><a href="about.html">About</a></li>
-							<li class="menu-item current-menu-item"><a href="review.html">Movie reviews</a></li>
-							<li class="menu-item"><a href="joinus.html">Join us</a></li>
-							<li class="menu-item"><a href="contact.html">Contact</a></li>
-						</ul> <!-- .menu -->
+<!--					<div class="main-navigation">-->
+<!--						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>-->
+<!--						<ul class="menu">-->
+<!--							<li class="menu-item"><a href="index.html">Home</a></li>-->
+<!--							<li class="menu-item"><a href="about.html">About</a></li>-->
+<!--							<li class="menu-item current-menu-item"><a href="review.html">Movie reviews</a></li>-->
+<!--							<li class="menu-item"><a href="joinus.html">Join us</a></li>-->
+<!--							<li class="menu-item"><a href="contact.html">Contact</a></li>-->
+<!--						</ul> &lt;!&ndash; .menu &ndash;&gt;-->
 
-						<form action="#" class="search-form">
-							<input type="text" placeholder="Search...">
-							<button><i class="fa fa-search"></i></button>
-						</form>
-					</div> <!-- .main-navigation -->
+<!--						<form action="#" class="search-form">-->
+<!--							<input type="text" placeholder="Search...">-->
+<!--							<button><i class="fa fa-search"></i></button>-->
+<!--						</form>-->
+<!--					</div> &lt;!&ndash; .main-navigation &ndash;&gt;-->
 
-					<div class="mobile-navigation"></div>
-				</div>
-			</header>
+<!--					<div class="mobile-navigation"></div>-->
+<!--				</div>-->
+<!--			</header>-->
 			<main class="main-content">
 				<div class="container">
 					<div class="page">
-						<div class="breadcrumbs">
-							<a href="index.html">Home</a>
-							<span>Movie Review</span>
-						</div>
+<!--						<div class="breadcrumbs">-->
+<!--							<a href="index.html">Home</a>-->
+<!--							<span>Movie Review</span>-->
+<!--						</div>-->
 
-						<div class="filters">
-							<select name="#" id="#" placeholder="Choose Category">
-								<option value="#">Action</option>
-								<option value="#">Drama</option>
-								<option value="#">Fantasy</option>
-								<option value="#">Horror</option>
-								<option value="#">Adventure</option>
-							</select>
-							<select name="#" id="#">
-								<option value="#">2012</option>
-								<option value="#">2013</option>
-								<option value="#">2014</option>
-							</select>
-						</div>
+<!--						<div class="filters">-->
+<!--							<select name="#" id="#" placeholder="Choose Category">-->
+<!--								<option value="#">Action</option>-->
+<!--								<option value="#">Drama</option>-->
+<!--								<option value="#">Fantasy</option>-->
+<!--								<option value="#">Horror</option>-->
+<!--								<option value="#">Adventure</option>-->
+<!--							</select>-->
+<!--							<select name="#" id="#">-->
+<!--								<option value="#">2012</option>-->
+<!--								<option value="#">2013</option>-->
+<!--								<option value="#">2014</option>-->
+<!--							</select>-->
+<!--						</div>-->
+
+
+						{% extends 'base.html' %}
+							{% block body %}
+
 						<div class="movie-list">
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-3.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Maleficient</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-4.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">The adventure of Tintin</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-5.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Hobbit</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-6.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Exists</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-1.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Drive hard</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-2.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Robocop</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-7.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">Life of Pi</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-							<div class="movie">
-								<figure class="movie-poster"><img src="dummy/thumb-8.jpg" alt="#"></figure>
-								<div class="movie-title"><a href="single.html">The Colony</a></div>
-								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
-							</div>
-						</div> <!-- .movie-list -->
 
-						<div class="pagination">
+							{% for movie in object_list %}
+							<div class="movie">
+								<figure class="movie-poster">
+									<img src="{{movie.image.url}}" alt="#">
+								</figure>
+								<div class="movie-title"><a href="">{{movie.title}}</a></div>
+								<p>Description goes here</p>
+							</div>
+							{% endfor %}
+
+
+
+						</div> <!-- .movie-list -->
+	                 <div class="pagination">
 							<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
 							<span class="page-number current">1</span>
 							<a href="#" class="page-number">2</a>
@@ -129,6 +106,11 @@
 							<a href="#" class="page-number">5</a>
 							<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
 						</div>
+
+		                   {% endblock body %}
+
+
+
 					</div>
 				</div> <!-- .container -->
 			</main>

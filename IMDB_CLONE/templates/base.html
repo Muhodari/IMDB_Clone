@@ -30,7 +30,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="{% static 'images/logo.jpg' %}" alt="" class="logo">
 						<div class="logo-copy">
 							<h1 class="site-title">Company Name</h1>
 							<small class="site-description">Tagline goes here</small>
@@ -106,6 +106,12 @@
 								</div>
 							</div>
 						</div> <!-- .row -->
+
+		{% block body %}
+
+		{% endblock body %}
+
+
 						
 						<div class="row">
 							<div class="col-md-4">
