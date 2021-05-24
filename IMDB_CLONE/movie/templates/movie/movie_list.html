@@ -96,17 +96,37 @@
 
 
 
-						</div> <!-- .movie-list -->
+						</div>
+						<!-- .movie-list -->
+						{% if is_paginated %}
 	                 <div class="pagination">
-							<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
-							<span class="page-number current">1</span>
-							<a href="#" class="page-number">2</a>
-							<a href="#" class="page-number">3</a>
-							<a href="#" class="page-number">4</a>
-							<a href="#" class="page-number">5</a>
-							<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
+
+         <!--			to go back to previous pages 			 -->
+                         {% if page_obj.has_previous %}
+							<a href="?page={{page_obj.previous_page_number}}" class="page-number prev"><i class="fa fa-angle-left"></i></a>
+						 {% else %}
+						 <a class="disabled"></a>
+						 {% endif %}
+
+                    <!--loop to generate any range-->
+						 {% for pages in page_obj.paginator.page_range %}
+						 {% if page_obj.number == pages %}
+						 <a href="#" class="page-number">{{pages}}</a>
+						 {% else %}
+						 <a href="?page=={{pages}}" class="page-number">{{pages}}</a>
+						 {% endif %}
+						 {% endfor%}
+
+
+                    <!-- when we have the next element-->
+						 {% if page_obj.has_next %}
+							<a href="?pages={{page_obj.next_page_number}}" class="page-number next"><i class="fa fa-angle-right"></i></a>
+						  {% else %}
+						 <a class="disabled"></a>
+						  {% endif %}
 						</div>
 
+	                   {% endif %}
 		                   {% endblock body %}
 
 
