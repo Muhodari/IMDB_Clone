@@ -113,14 +113,14 @@
 						 {% if page_obj.number == pages %}
 						 <a href="#" class="page-number">{{pages}}</a>
 						 {% else %}
-						 <a href="?page=={{pages}}" class="page-number">{{pages}}</a>
+						 <a href="?page={{pages}}" class="page-number">{{pages}}</a>
 						 {% endif %}
 						 {% endfor%}
 
 
                     <!-- when we have the next element-->
 						 {% if page_obj.has_next %}
-							<a href="?pages={{page_obj.next_page_number}}" class="page-number next"><i class="fa fa-angle-right"></i></a>
+							<a href="?page={{page_obj.next_page_number}}" class="page-number next"><i class="fa fa-angle-right"></i></a>
 						  {% else %}
 						 <a class="disabled"></a>
 						  {% endif %}

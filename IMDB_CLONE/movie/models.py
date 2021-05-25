@@ -4,7 +4,7 @@ from django.db import models
 CATEGORY_CHOICES = (
     ('A', 'ACTION'),
     ('D', 'DRAMA'),
-    ('R', 'ROMANCe'),
+    ('R', 'ROMANCE'),
     ('C', 'COMEDY')
 )
 
