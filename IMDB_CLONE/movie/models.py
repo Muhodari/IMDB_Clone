@@ -52,3 +52,6 @@ class Movie_Links(models.Model):
     movie = models.ForeignKey(Movie, related_name='movie_watch_link', on_delete=models.CASCADE)
     type = models.CharField(choices=LINK_CHOICES, max_length=1)
     link = models.URLField()
+
+    def __str__(self):
+        return str(self.movie)
