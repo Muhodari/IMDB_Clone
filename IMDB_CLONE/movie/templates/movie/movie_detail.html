@@ -107,6 +107,35 @@
 										<li><strong>Writers:</strong> Chris Sanders (screenplay), Kirk De Micco (screenplay)</li>
 										<li><strong>Stars:</strong> Nicolas Cage, Ryan Reynolds, Emma Stone</li>
 									</ul>
+
+
+									<section>
+										<h3>Links</h3>
+										<ul class="dlinks">
+											<li> <a>Download</a></li>
+											{% for link in links %}
+											{% if link.type == 'D' %}
+											<li> <a href="{{link.link}}">link {{forloop.counter}}</a> </li>
+											{% endif %}
+											{% endfor %}
+
+
+										</ul>
+
+										<ul class="wlinks">
+											<li> <a>Watch</a></li>
+											{% for link in links %}
+											{% if link.type == 'W' %}
+											<li> <a href="{{link.link}}">link {{forloop.counter}}</a> </li>
+											{% endif %}
+											{% endfor %}
+
+										</ul>
+
+									</section>
+
+
+
 								</div>
 							</div> <!-- .row -->
 
