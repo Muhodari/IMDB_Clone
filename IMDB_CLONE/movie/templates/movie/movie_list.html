@@ -23,9 +23,11 @@
 
 
 	<body>
-		
+
+	{% extends 'base.html' %}
 
 		<div id="site-content">
+			<h3>{{movie_category}}</h3>
 <!--			<header class="site-header">-->
 <!--				<div class="container">-->
 <!--					<a href="index.html" id="branding">-->
@@ -79,7 +81,7 @@
 <!--						</div>-->
 
 
-						{% extends 'base.html' %}
+
 							{% block body %}
 
 						<div class="movie-list">
