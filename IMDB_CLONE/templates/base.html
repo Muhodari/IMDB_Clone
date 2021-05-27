@@ -17,7 +17,7 @@
 		
 		<!--[if lt IE 9]>
 		<script src="{% static 'js/ie-support/html5.js' %}"></script>
-		<script src="{{% static 'js/ie-support/respond.js' %}"></script>
+		<script src="{% static 'js/ie-support/respond.js' %}"></script>
 		<![endif]-->
 
 	</head>
@@ -52,6 +52,37 @@
 							<button><i class="fa fa-search"></i></button>
 						</form>
 					</div> <!-- .main-navigation -->
+
+						<div class="breadcrumbs">
+							<a href="index.html">Home</a>
+							<span>Movie Review</span>
+						</div>
+
+						<div class="filters">
+							<select name="#" id="#" placeholder="Choose Category">
+								<option value="#">Action</option>
+								<option value="#">Drama</option>
+								<option value="#">Fantasy</option>
+								<option value="#">Horror</option>
+								<option value="#">Adventure</option>
+							</select>
+							<select name="#" id="#">
+								<option value="#">2012</option>
+								<option value="#">2013</option>
+								<option value="#">2014</option>
+							</select>
+							<select name="#" id="#">
+								<option value="#">Choose language</option>
+								<option value="#">ENGLISH</option>
+								<option value="#">FRENCH</option>
+							</select>
+						</div>
+
+
+
+
+
+
 
 					<div class="mobile-navigation"></div>
 				</div>
